@@ -8,19 +8,19 @@
 
 <div>
   <label>Alfabeyi Kullan</label>
-  <input type="checkbox">
+  <input (change)="modifyLetters()" type="checkbox">
 </div>
 
 
 <div>
   <label>Sayıları Kullan</label>
-  <input type="checkbox">
+  <input (change)="modifyNumbers()" type="checkbox">
 </div>
 
 
 <div>
   <label>Sembolleri Kullan</label>
-  <input type="checkbox">
+  <input (change)="modifySymbols()" type="checkbox">
 </div>
 
 <div>
@@ -30,10 +30,8 @@
 
 <div>
   <label>Şifreniz</label>
-  <input [value]="password">
+  <input>
 </div>
 
-<p>{{password}}</p>
 
-<p>{{getName()}}</p>
 
